@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!------------------CSS with SASS------------------->
+  <link rel="stylesheet" href="./styles.css">  
+
+
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+
+</head>
+<body>
+
+  <header class="d-flex flex-row justify-content-between px-2 py-3 py-lg-6 px-lg-6">
+
+    <img src="./images/logo.svg" alt="logo" class="header__logo">
+    <button class="button btn btn-outline-primary rounded-pill">Try it free</button>
+
+  </header>
+
+  <main class="text-center">
+
+    <section class="main__section py-7 px-6 px-lg-9">
+
+      <h1 class="main__section__title">Build The Community Your Fans Will Love</h1>
+
+      <p class="main__section__par px-lg-8">
+        Huddle re-imagines the way we build communities. You have a voice, but so does
+        your audience. Create connections with your users as you engage in genuine discussion.
+      </p>
+
+      <button class="button btn btn-primary main__section__button rounded-pill">Get Started For Free</button>
+
+    </section>
+
+    <section class="main__section py-7 px-6 px-lg-9">
+ 
+      <img src="./images/screen-mockups.svg" alt="ilustration 1" class="main__section__img img-fluid" id="ilustration1">
+
+      <div class="d-flex flex-column flex-lg-row justify-content-lg-around">
+
+        <div class="main__section__stats">
+
+          <img src="./images/icon-communities.svg" alt="" class="img-fluid">
+          <h1>1.4k+</h1>
+          <p>Communities Formed</p>
+        </div>
+
+        <div class="main__section__stats">
+          <img src="./images/icon-communities.svg" alt="" class="img-fluid">
+          <h1>2.7m+</h1>
+          <p>Messages Sent</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="main__section d-flex flex-column-reverse flex-lg-row justify-content-lg-around align-items-center py-7 px-6 px-lg-8 gap-3 gap-lg-5 gap-xxl-8" id="third__main__section" style="background-image:url('./images/bg-section-top-desktop-2.svg')">
+
+      <div class="main__section__text text-lg-start">
+
+        <h1 class="main__section__title">Grow Together</h1>
+        <p class="main__section__par">
+          Generate meaningful discussions with your audience and build a strong, loyal community.
+          Think of the insightful conversations you miss out on with a feedback form.
+        </p>
+
+      </div>
+
+      <img src="./images/illustration-grow-together.svg" alt="ilustration 2" class="img-fluid main__section__img">
+
+    </section>
+
+    <section class="main__section d-flex flex-column-reverse flex-lg-row-reverse justify-content-lg-around align-items-center py-7 px-6 px-lg-8 gap-3 gap-lg-5 gap-xxl-8" id="fourth__main__section">
+
+      <div class="main__section__text text-lg-start">
+        <h1 class="main__section__title">Flowing Conversations</h1>
+        <p class="main__section__par">
+          You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+          just-in-time loading for a more natural flow.
+        </p>
+      </div>
+
+      <img src="./images/illustration-flowing-conversation.svg" alt="ilustration 3" class="img-fluid main__section__img">
+
+    </section>
+
+    <section class="main__section d-flex flex-column-reverse flex-lg-row justify-content-lg-around align-items-center py-7 px-6 px-lg-8 gap-3 gap-lg-5 gap-xxl-8" id="fifth__main__section" style="background-image:url('./images/bg-section-bottom-desktop-2.svg')">
+
+      <div class="main__section__text text-lg-start">
+
+        <h1 class="main__section__title">Your Users</h1>
+
+        <p class="main__section__par">
+          It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+          once signed in to your app, your users can start chatting immediately.
+        </p>
+      </div>
+
+      <img src="./images/illustration-your-users.svg" alt="ilustration 4" class="img-fluid main__section__img">
+
+    </section>
+
+    <section class="main__section py-7 pb-10 px-6 px-lg-7">
+
+      <h1 class="main__section__title mb-5">Ready To Build Your Community?</h1>
+
+      <button class="btn btn-primary main__section__button rounded-pill">Get Started For Free</button>
+
+    </section>
+
+  </main>
+
+
+
+  <footer>
+
+    <div class="footer__container d-flex flex-column-reverse flex-md-row py-7 px-2 px-lg-7 pt-lg-10 gap-3 gap-lg-10" style="background-color: hsla(192, 100%, 9%);;">
+
+      <section class="footer__container__section">
+
+        <img src="./images/logo.svg" alt="footer logo" class="img-fluid footer__container__section__img mb-1">
+
+        <p class="footer__container__section__par">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+          vestibulum a, ultrices quis sem.
+        </p>
+      
+        <p class="footer__container__section___par d-flex flex-row gap-2">
+          <span class="footer__container__section__par__span"><img src="./images/icon-phone.svg" alt="Phone" class="img-fluid"></span>Phone: +1-543-123-4567
+        </p>
+
+        <p class="footer__container__section___par d-flex flex-row gap-2">
+          <span class="footer__container__section__par__span"><img src="./images/icon-email.svg" alt="email" class="img-fluid"></span>Phone: example@huddle.com
+        </p>
+
+        <div class="d-flex flex-row justify-content-start align-items-center footer__container__section__icons">
+
+          <i class="bi bi-facebook footer__container__section__icons__item "></i>
+          <i class="bi bi-instagram footer__container__section__icons__item"></i>
+          <i class="bi bi-twitter footer__container__section__icons__item"></i>
+
+        </div>
+
+      </section>
+
+      <section class="footer__container__section">
+
+        <h1 class="footer__container__section__title">Newsletter</h1>
+        <p class="footer__container__section__par">
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+          send you spam or pass on your email address
+        </p>
+
+        <form class="d-flex flex-column flex-md-row footer__container__section__form justify-content-between gap-2" role="search">
+
+          <input class="form-control me-2 footer__container__section__form__input" type="text">
+
+          <button class="btn btn-primary footer__container__section__form__button" type="submit">Suscribe</button>
+
+        </form>
+  
+      </section>
+
+    </div>
+
+
+    <p class="attribution " style="background-color: hsl(192, 100%, 9%);">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/EduardoRuiz97" target="_blank">Eduardo Ruiz</a>.
+    </p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

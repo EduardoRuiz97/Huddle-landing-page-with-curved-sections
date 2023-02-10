@@ -1,0 +1,86 @@
+@use './mixins';
+@use './variables';
+
+header {
+  img {
+    width: 30%;
+    height: 10%
+  }
+}
+
+.main__section {
+  &__title {
+    @include mixins.titlePrimary(1.5rem);
+  };
+
+  &__par {
+    @include mixins.Paragraph(1, 400);
+  }
+
+  &__img {
+    @media only screen and (min-width: 996px) {
+      width: 50%;
+    }
+  }
+
+
+  #ilustration1 {
+    @media only screen and (min-width: 996px) {
+      width: 100%;
+    }
+  }
+
+  &__stats {
+
+    margin-top: 30px;
+
+    h1 {
+      font: {
+        family: variables.$OpenSans;
+        size: 3rem;
+        weight: 700;
+      }
+      text-transform: uppercase;
+      color: variables.$VeryDarkCyan;
+    }
+
+    p {
+      color: variables.$VeryDarkCyan;
+      opacity: 0.75;
+      font-family: variables.$OpenSans;
+      font-weight: 600;
+    }
+  }
+}
+
+#third__main__section, #fifth__main__section {
+  @include mixins.backgroundSet();
+}
+
+
+footer {
+  @include mixins.backgroundSet();
+  @include mixins.footerText(1rem);
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+
+    &__section {
+      &__form {
+        &__button {
+          
+          @media only screen and (max-width:996px) {
+            width: 45%;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

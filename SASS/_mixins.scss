@@ -1,0 +1,58 @@
+@use './variables';
+
+
+@mixin titlePrimary($fontsize) {
+  font: {
+    family: variables.$Poppins;
+    size: $fontsize;
+    weight: 700;
+  }
+
+  color: variables.$VeryDarkCyan;
+  line-height: 1.5;
+
+  @media screen and (min-width: 996px) {
+
+    font: {
+      size: $fontsize * 1.25;
+    }
+  }
+}
+
+@mixin Paragraph($fontsize, $weight) {
+  font: {
+    family: variables.$OpenSans;
+    size: $fontsize * 0.85rem;
+    weight: $weight;
+  }
+
+  color: variables.$VeryDarkCyan;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 996px) {
+
+    font: {
+      size: $fontsize * 1.2rem;
+    }
+  }
+}
+
+@mixin footerText($fontsize) {
+  font: {
+    family: variables.$OpenSans;
+    size: $fontsize;
+    weight: 600;
+  }
+
+  color: variables.$VeryPaleBlue;
+}
+
+@mixin backgroundSet {
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: top 0 left 0;
+  };
+}
+

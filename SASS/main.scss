@@ -1,0 +1,33 @@
+/*--------Spacing ------------*/
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 1.25,
+  3: $spacer *1.55,
+  4: $spacer * 1.7,
+  5: $spacer * 2,
+  6: $spacer * 3.5,
+  7: $spacer * 5,
+  8: $spacer * 6.25,
+  9: $spacer * 9,
+  10: $spacer * 10.5,
+);
+
+@use './variables';
+
+$primary: variables.$Pink;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;  
+$btn-font-family: variables.$OpenSans;
+$btn-font-size: 0.95rem;     
+$btn-font-weight: 700;
+
+
+
+@use './reset';
+@use './styles';
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
